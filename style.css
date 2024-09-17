@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #888888;
+    display: grid;
+    grid-template-columns: 2fr 6fr repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.homebutton {
+    background: #bbbbbb;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    margin: 10px 10px 10px 10px;
+    font-size: 200%;
+    grid-column: 1;
+}
+
+.AboutMe {
+    display: grid;
+    grid-column: 3;
+}
+
+.MyProjects {
+    display: grid;
+    grid-column: 4;
+}
+
+.Downloads {
+    display: grid;
+    grid-column: 5;
+}
+
+.Contact {
+    display: grid;
+    grid-column: 6;
+}
