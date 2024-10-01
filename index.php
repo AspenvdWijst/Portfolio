@@ -1,22 +1,24 @@
 <?php
-switch (uri) {
-    case '/aboutme':
-        require('Views/aboutme.view.php');
+$uri= $_SERVER['REQUEST_URI'];
+
+switch ($uri) {
+    case '/about':
+        require __DIR__ .'/Views/about.view.php';
         break;
 
-    case '/myprojects':
-        require('Views/myprojects.view.php');
+    case '/projects':
+        require __DIR__ .'/Views/projects.view.php';
         break;
 
     case '/downloads':
-        require('Views/downloads.view.php');
+        require __DIR__ .'/Views/downloads.view.php';
         break;
 
     case '/contact':
-        require('Views/contact.view.php');
+        require __DIR__ .'/Views/contact.view.php';
         break;
 
     default:
-        require('Views/index.view.php');
+        require __DIR__ .'/Views/index.view.php';
         break;
 }
