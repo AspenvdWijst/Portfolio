@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Views/style.css">
 </head>
 <body>
-<?php include 'Header.html'; ?>
+<?php include 'Views/Header.html'; ?>
 <section>
     <h1 id="softwaredevelop">Software development</h1>
     <h1 id="mediaproj">Media</h1>
