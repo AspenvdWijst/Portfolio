@@ -1,18 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="Views/style.css">
-</head>
-<body>
-<?php include 'Views/Header.html'; ?>
-<section>
-    <!--https://www.youtube.com/watch?v=nxoHR9lltK0-->
-        <img src="Images_fonts/450793594_793226346213287_225845.jpg" class="bgimg" alt="test"/>
-</section>
-<footer>
+<?php
+switch (uri) {
+    case '/aboutme':
+        require('Views/aboutme.view.php');
+        break;
 
-</footer>
-</body>
-</html>
+    case '/myprojects':
+        require('Views/myprojects.view.php');
+        break;
+
+    case '/downloads':
+        require('Views/downloads.view.php');
+        break;
+
+    case '/contact':
+        require('Views/contact.view.php');
+        break;
+
+    default:
+        require('Views/index.view.php');
+        break;
+}
