@@ -6,6 +6,7 @@ class Connection{
         $username = "root";
         $password = "!cc8Z1w8iLAs66ipH";
         $dbname = "profileapp";
+        $sql = '';
 
         try {
             $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
