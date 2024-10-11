@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title><?php echo $title?></title> <!--This calls the title from the page itself, making the title always change dynamically-->
     <link rel="stylesheet" href="/Views/CSS/style.css">
 </head>
 <body>
 <nav>
     <a class="HomeButton" id="Home" href="../">Aspen</a>
     <a class="AboutMe" href="../about">About me</a>
-    <div class="dropdown">
+    <div class="dropdown"> <!--This is the general class in which I worked with the dropdown menu-->
         <a class="MyProjects" href="../projects">My projects</a>
         <div id="dropdown" class="dropdownContent">
             <a href="../projects.view.php" class="softwaredevelop">Software Development</a>

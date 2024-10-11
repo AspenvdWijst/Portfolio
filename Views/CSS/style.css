@@ -1,9 +1,11 @@
+/* makes the margin and padding 0, so we don't have any white space*/
 * {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
+/*makes the nav have a base layout*/
 nav {
     font-weight: 500;
     background: rgba(56, 56, 56, 0.92);
@@ -28,11 +30,13 @@ nav {
     transition: background-color 0.3s;
 }
 
-.HomeButton:hover {
+/*creates an effect when you hover over a button*/
+.HomeButton:hover, .AboutMe:hover, .MyProjects:hover, .dropdownContent a:hover, .Downloads:hover, .Contact:hover{
     background: rgba(25 , 25, 25, 0.21);
 }
 
-.HomeButton:active {
+/*creates an effect when you click on a button*/
+.HomeButton:active, .AboutMe:active, .MyProjects:active, .dropdownContent a:active, .Downloads:active, .Contact:active{
     background: rgba(5 , 5, 5, 0.3);
 }
 
@@ -49,14 +53,7 @@ nav {
     font-size: 150%;
 }
 
-.AboutMe:hover {
-    background: rgba(25 , 25, 25, 0.21);
-}
-
-.AboutMe:active {
-    background: rgba(5 , 5, 5, 0.3);
-}
-
+/*makes sure the dropdown menu is in the right place*/
 .dropdown {
     position: relative;
     display: inline-block;
@@ -75,14 +72,6 @@ nav {
     background: rgba(56, 56, 56, 0);
     border: none;
     transition: background-color 0.3s;
-}
-
-.MyProjects:hover {
-    background: rgba(25 , 25, 25, 0.21);
-}
-
-.MyProjects:active {
-    background: rgba(5 , 5, 5, 0.3);
 }
 
 .dropdownContent  {
@@ -106,14 +95,7 @@ nav {
     transition: background-color 0.3s;
 }
 
-.dropdownContent a:hover{
-    background: rgba(25 , 25, 25, 0.21);
-}
-
-.dropdownContent a:active {
-    background: rgba(5 , 5, 5, 0.3);
-}
-
+/*shows the dropdown when hovered over*/
 .dropdown:hover .dropdownContent {
     display: block;
 }
@@ -131,14 +113,6 @@ nav {
     transition: background-color 0.3s;
 }
 
-.Downloads:hover {
-    background: rgba(25 , 25, 25, 0.21);
-}
-
-.Downloads:active {
-    background: rgba(5 , 5, 5, 0.3);
-}
-
 .Contact {
     display: flex;
     justify-content: center;
@@ -152,14 +126,6 @@ nav {
     transition: background-color 0.3s;
 }
 
-.Contact:hover {
-    background: rgba(25 , 25, 25, 0.21);
-}
-
-.Contact:active {
-    background: rgba(5 , 5, 5, 0.3);
-}
-
 .bgimg {
     z-index: -1;
     position: absolute;
@@ -169,4 +135,3 @@ nav {
     height: 100vh;
     object-fit: cover;
 }
-

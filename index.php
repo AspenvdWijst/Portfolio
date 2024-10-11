@@ -1,24 +1,18 @@
 <?php
-$uri= $_SERVER['REQUEST_URI'];
+require 'Controllers/index.controller.php';
 
-switch ($uri) {
-    case '/about':
-        require __DIR__ .'/Views/about.view.php';
-        break;
+$path = $_SERVER['PATH_INFO'] ?? '/'; #makes the $path be the requested path
 
-    case '/projects':
-        require __DIR__ .'/Views/projects.view.php';
-        break;
-
-    case '/downloads':
-        require __DIR__ .'/Views/downloads.view.php';
-        break;
-
-    case '/contact':
-        require __DIR__ .'/Views/contact.view.php';
-        break;
-
-    default:
-        require __DIR__ .'/Views/index.view.php';
-        break;
+class route
+{
+    public static function getroutes(){
+        match ($_SERVER['PATH_INFO'] ?? '/'){
+          '/'           => controller::redirect("index"),
+          '/about'      => controller::redirect("about"),
+          '/projects'   => controller::redirect("projects"),
+          '/contact'    => controller::redirect("contact"),
+          default       => controller::redirect("404"),
+        };
+    }
 }
+

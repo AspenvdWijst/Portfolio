@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="/Views/CSS/style.css">
 </head>
 <body>
-<?php include 'layouts/header.html'; ?>
+<?php include 'layouts/header.php'; ?>
 <section>
     <!--https://www.youtube.com/watch?v=nxoHR9lltK0-->
         <img src="../Images_fonts/450793594_793226346213287_225845.jpg" class="bgimg" alt="test"/>

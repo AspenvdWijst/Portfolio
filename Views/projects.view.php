@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/Views/CSS/style.css">
 </head>
 <body>
-<?php include 'layouts/header.html'; ?>
+<?php include 'layouts/header.php'; ?>
 <section>
     <h1 id="softwaredevelop">Software development</h1>
     <h1 id="mediaproj">Media</h1>
