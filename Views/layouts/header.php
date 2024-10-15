@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><?php echo $title?></title> <!--This calls the title from the page itself, making the title always change dynamically-->
+    <title><?php echo ucfirst($title);?></title> <!--This calls the title from the page itself, making the title always change dynamically-->
     <link rel="stylesheet" href="/Views/CSS/style.css">
 </head>
 <body>

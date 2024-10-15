@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="/Views/CSS/style.css">
 </head>
 <body>
-<?php include 'layouts/header.php'; ?>
 <section>
     <form method="post">
         <label for="name">Name:</label><br>

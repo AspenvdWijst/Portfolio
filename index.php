@@ -1,18 +1,9 @@
 <?php
+require 'router.php';
 require 'Controllers/index.controller.php';
+require 'database/connection.php';
+require 'Views/layouts/header.php';
+route::getroutes();
 
-$path = $_SERVER['PATH_INFO'] ?? '/'; #makes the $path be the requested path
 
-class route
-{
-    public static function getroutes(){
-        match ($_SERVER['PATH_INFO'] ?? '/'){
-          '/'           => controller::redirect("index"),
-          '/about'      => controller::redirect("about"),
-          '/projects'   => controller::redirect("projects"),
-          '/contact'    => controller::redirect("contact"),
-          default       => controller::redirect("404"),
-        };
-    }
-}
 
