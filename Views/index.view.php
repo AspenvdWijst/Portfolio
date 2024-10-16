@@ -6,7 +6,8 @@
     <link rel="stylesheet" type="text/css" href="/Views/CSS/style.css">
 </head>
 <body>
-<section>
+<section class="indexcontainer">
+        <span class="starttext">I'm a</span>
     <!--https://www.youtube.com/watch?v=nxoHR9lltK0-->
 
 </section>
