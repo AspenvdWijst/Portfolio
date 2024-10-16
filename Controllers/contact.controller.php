@@ -8,9 +8,6 @@ class contactController {
     }
 
     public function makepost(): void{
-        $this->createpost($_POST["name"], $_POST["email"], $_POST["message"]);
-        require "./Views/contact.view.php";
+        $this->contact->createpost($_POST["name"], $_POST["email"], $_POST["message"]);
     }
-
-
 }
