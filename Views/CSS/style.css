@@ -26,7 +26,7 @@ body{
 
 /*makes the nav have a base layout*/
 nav {
-    font-weight: 500;
+    font-weight: bold;
     background: rgba(56, 56, 56, 0);
     display: grid   ;
     grid-template-columns: 2fr 6fr repeat(4, 1fr);
@@ -150,9 +150,29 @@ label {
 }
 
 .indexcontainer{
-    height: 93vh;
+    height: 91vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    flex-direction: column;
+}
+
+.starttext{
+    font-size: 6dvh;
+}
+
+.homeimages img{
+    height: 5dvh;
+    padding: 1dvh;
+}
+
+footer{
+    display: flex;
+    align-items: end;
+    font-weight: bold;
+    font-size: 1.5vh;
+    height: 2vh;
+    width: 100dvw;
+    background: rgba(56, 56, 56, 0);
 }

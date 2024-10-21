@@ -4,3 +4,4 @@ require 'Views/layouts/header.php';#calls the header first so it's always on the
 require 'database/connection.php';#establishes a connection with the database
 require 'Controllers/contact.controller.php';
 require 'router.php';#routes the page
+require 'Views/layouts/footer.php';
