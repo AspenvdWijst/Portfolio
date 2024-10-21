@@ -8,19 +8,19 @@
 /*got the bg code from https://www.sliderrevolution.com/resources/css-animated-background/ and adjusted it to my liking*/
 body{
     background: linear-gradient(-45deg, #8100b1, #660979, #4242a8, #ad00ff);
-    background-size: 208vh 208vw;
+    background-size: 400vh 400vw;
     animation: gradient 20s ease infinite;
 }
 
 @keyframes gradient {
     0% {
-        background-position: 0 50%;
+        background-position: 50% 0;
     }
     50% {
         background-position: 100% 50%;
     }
     100% {
-        background-position: 0 50%;
+        background-position: 50% 0;
     }
 }
 
@@ -154,4 +154,5 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }

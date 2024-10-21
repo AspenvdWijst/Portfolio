@@ -11,8 +11,8 @@
     <div class="dropdown"> <!--This is the general class in which I worked with the dropdown menu-->
         <a class="MyProjects" href="../projects">My projects</a>
         <div id="dropdown" class="dropdownContent">
-            <a href="../projects.view.php" class="softwaredevelop">Software Development</a>
-            <a href="../projects.view.php" class="mediaproj">Media</a>
+            <a href="../projects#software" class="softwaredevelop">Software Development</a>
+            <a href="../projects#media" class="mediaproj">Media</a>
         </div>
     </div>
     <a class="Downloads" href="../downloads">Downloads</a>
