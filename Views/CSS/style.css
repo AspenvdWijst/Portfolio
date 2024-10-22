@@ -176,3 +176,32 @@ footer{
     width: 100dvw;
     background: rgba(56, 56, 56, 0);
 }
+
+.contactcontainer{
+    height: 84dvh;
+    width: 100dvw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-direction: column;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 6dvh;
+}
+
+form input, textarea{
+    margin: 1dvh;
+    border-radius: 0.35dvh;
+    background: rgba(56, 56, 56, 0);
+    border: 1px solid rgba(56, 56, 56);
+    width: 25dvw;
+}
+
+.contactcontainer img{
+    height: 5dvh;
+    padding: 1dvh;
+}
