@@ -6,10 +6,8 @@
     <link rel="stylesheet" href="/Views/CSS/style.css">
 </head>
 <body>
-<section>
+<section class="aboutcontainer">
+    <h1 class="pagetitle">About Me</h1>
 </section>
-<footer>
-
-</footer>
 </body>
 </html>

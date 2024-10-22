@@ -222,3 +222,23 @@ form input, textarea{
 .submit:active{
     background: rgba(15, 15, 15, 0.2);
 }
+
+.errorcontainer{
+    height: 91dvh;
+    width: 100dvw;
+}
+
+.projectscontainer{
+    height: 91dvh;
+    width: 100dvw;
+}
+
+.aboutcontainer{
+    height: 91dvh;
+    width: 100dvw;
+}
+
+.downloadscontainer{
+    height: 91dvh;
+    width: 100dvw;
+}

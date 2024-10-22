@@ -8,7 +8,9 @@
     <title>Error</title>
 </head>
 <body>
-    404 not found
+    <section class="errorcontainer">
+        404 not found
+    </section>
 </body>
 </html>
-<?php
+
