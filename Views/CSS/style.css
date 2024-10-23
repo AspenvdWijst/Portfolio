@@ -208,7 +208,6 @@ form input, textarea{
 
 .submit{
     background: rgba(56, 56, 56, 0);
-    border-radius: 1vh;
     border: 1px solid rgba(56, 56, 56);
     height: 4dvh;
     width: 4dvw;
@@ -230,7 +229,8 @@ form input, textarea{
 
 .projectscontainer{
     height: 91dvh;
-    width: 100dvw;
+    width: 98dvw;
+    margin: 0 1dvw 0 1dvw;
 }
 
 .aboutcontainer{
@@ -241,4 +241,55 @@ form input, textarea{
 .downloadscontainer{
     height: 91dvh;
     width: 100dvw;
+}
+
+.developmentcontainer{
+    font-size: 5dvh;
+    margin-left: 1dvw;
+    padding: 2dvh 0 2dvh 0;
+}
+
+#softwaredevelop{
+    padding: 2dvh 0 2dvh 0;
+}
+
+h2{
+    font-size: 3dvh;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+hr{
+    border: none;
+    height: 0.01dvh;
+    background-color: black;
+    margin: 1dvh;
+}
+
+.portfoliop label{
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.portfoliop label:after{
+    content: "";
+    position: absolute;
+}
+
+.collapsed-text{
+    max-height: 0;
+    overflow-wrap: anywhere;
+    position: relative;
+    top: -100%;
+    transition: all 0.3s ease;
+}
+
+.portfoliop .collapsed-text{
+    max-height: 50dvh;
+    top: 0;
+}
+
+.collapsed-text h6{
+    margin-bottom: 1dvh;
 }
