@@ -13,7 +13,7 @@
             <div class="portfoliop">
                 <input type="checkbox" id="collapse">
                 <label for="collapse">
-                    <h1>1 | Portfolio webpage</h1>
+                    <h1>1 | Portfolio webpage<img src="../Images_fonts/Images/arrow.png" alt="arrow" class="droparrow"></h1>
                     <hr>
                     <h2>2024</h2>
                 </label>

@@ -251,6 +251,7 @@ form input, textarea{
 
 #softwaredevelop{
     padding: 2dvh 0 2dvh 0;
+    font-style: italic;
 }
 
 h2{
@@ -266,10 +267,44 @@ hr{
     margin: 1dvh;
 }
 
+/*followed this tutorial for the base of the code but edited it to my liking:*/
+/*https://www.youtube.com/watch?v=RvpYnUZRquw*/
+
+.portfoliop input{
+    display: none;
+}
+
+.portfoliop h1{
+    display: flex;
+    align-items: center;
+}
+
+h1 img{
+    margin-left: auto;
+}
+
+.droparrow{
+    height: 4dvh;
+    display: inline-block;
+    rotate: 90deg;
+    transition: 0.5s ease;
+}
+
 .portfoliop label{
     position: relative;
     display: block;
     cursor: pointer;
+    z-index: 1;
+    transition: 0.5s ease;
+}
+
+.portfoliop label:hover{
+    font-size: 130%;
+    transition: 0.5s ease;
+}
+
+.portfoliop label:hover img{
+    transform: scale(115%);
 }
 
 .portfoliop label:after{
@@ -277,17 +312,23 @@ hr{
     position: absolute;
 }
 
+.portfoliop input:checked + label h1 .droparrow {
+    transform: rotate(90deg);
+}
+
 .collapsed-text{
     max-height: 0;
     overflow-wrap: anywhere;
     position: relative;
     top: -100%;
-    transition: all 0.3s ease;
+    transition: all 0.6s ease;
+    opacity: 0;
 }
 
-.portfoliop .collapsed-text{
+.portfoliop input:checked ~ .collapsed-text{
     max-height: 50dvh;
     top: 0;
+    opacity: 1;
 }
 
 .collapsed-text h6{
