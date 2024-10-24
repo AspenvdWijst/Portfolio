@@ -243,13 +243,15 @@ form input, textarea{
     width: 100dvw;
 }
 
-.developmentcontainer{
+.developmentcontainer,
+.mediacontainer{
     font-size: 5dvh;
     margin-left: 1dvw;
     padding: 2dvh 0 2dvh 0;
 }
 
-#softwaredevelop{
+#softwaredevelop,
+#mediaproj{
     padding: 2dvh 0 2dvh 0;
     font-style: italic;
 }
@@ -270,11 +272,12 @@ hr{
 /*followed this tutorial for the base of the code but edited it to my liking:*/
 /*https://www.youtube.com/watch?v=RvpYnUZRquw*/
 
-.portfoliop input{
+input{
     display: none;
 }
 
-.portfoliop h1{
+.portfoliop h1,
+.charityp h1{
     display: flex;
     align-items: center;
 }
@@ -283,40 +286,46 @@ h1 img{
     margin-left: auto;
 }
 
-.droparrow{
+.portfoliodrop,
+.charitydrop{
     height: 4dvh;
     display: inline-block;
     rotate: 90deg;
     transition: 0.5s ease;
 }
 
-.portfoliop label{
+.portfoliop label,
+.charityp label{
     position: relative;
     display: block;
     cursor: pointer;
-    z-index: 1;
     transition: 0.5s ease;
 }
 
-.portfoliop label:hover{
+.portfoliop label:hover,
+.charityp label:hover{
     font-size: 130%;
     transition: 0.5s ease;
 }
 
-.portfoliop label:hover img{
+.portfoliop label:hover img,
+.charityp label:hover img{
     transform: scale(115%);
 }
 
-.portfoliop label:after{
+.portfoliop label:after,
+.charityp label:after{
     content: "";
     position: absolute;
 }
 
-.portfoliop input:checked + label h1 .droparrow {
+.portfoliop input:checked + label h1 .portfoliodrop,
+.charityp input:checked + label h1 .charitydrop{
     transform: rotate(90deg);
 }
 
-.collapsed-text{
+.portfoliocollapsed,
+.charitycollapsed{
     max-height: 0;
     overflow-wrap: anywhere;
     position: relative;
@@ -325,12 +334,18 @@ h1 img{
     opacity: 0;
 }
 
-.portfoliop input:checked ~ .collapsed-text{
+.portfoliop input:checked ~ .portfoliocollapsed,
+.charityp input:checked ~ .charitycollapsed{
     max-height: 50dvh;
     top: 0;
     opacity: 1;
 }
 
-.collapsed-text h6{
+.portfoliocollapsed h6,
+.charitycollapsed{
     margin-bottom: 1dvh;
+}
+
+footer{
+    margin-top: auto;
 }

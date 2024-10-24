@@ -14,7 +14,6 @@ class contactmodel{
             $stmt->execute();
             } catch(PDOException $e){
             echo "send error: " . $e->getMessage();
-            die(var_dump($e->getMessage()));
         }
     }
 }

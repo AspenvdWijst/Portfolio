@@ -11,21 +11,37 @@
     <h1 id="softwaredevelop">Software development</h1>
         <section class="developmentcontainer">
             <div class="portfoliop">
-                <input type="checkbox" id="collapse">
-                <label for="collapse">
-                    <h1>1 | Portfolio webpage<img src="../Images_fonts/Images/arrow.png" alt="arrow" class="droparrow"></h1>
+                <input type="checkbox" id="portfoliocollapse">
+                <label for="portfoliocollapse">
+                    <h1>1 | Portfolio webpage<img src="../Images_fonts/Images/arrow.png" alt="arrow" class="portfoliodrop"></h1>
                     <hr>
                     <h2>2024</h2>
                 </label>
-                <div class="collapsed-text">
+                <div class="portfoliocollapsed">
                     <h6>lorum ipsum</h6>
                     <p>
-                        fiebwdufewsdagfvubsdauvgusdagbfvuikgsduvcbkjsdabvckjhbwejkcbgujkaisbvkujsadgvjkubvjkasbvkiujabweukjvbukasbvjkdschabvjkhsadbvkjasdbjh
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad atque cumque distinctio dolore ducimus enim id, modi necessitatibus neque nostrum, officiis omnis quasi ratione repellat tempora velit. Atque, odit!
                     </p>
                 </div>
             </div>
         </section>
     <h1 id="mediaproj">Media</h1>
+    <section class="mediacontainer">
+        <div class="charityp">
+            <input type="checkbox" id="collapse">
+            <label for="collapse">
+                <h1>1 | Portfolio webpage<img src="../Images_fonts/Images/arrow.png" alt="arrow" class="charitydrop"></h1>
+                <hr>
+                <h2>2024</h2>
+            </label>
+            <div class="charitycollapsed">
+                <h6>lorum ipsum</h6>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, assumenda atque deserunt dignissimos distinctio dolorum, eius est itaque nisi nulla pariatur placeat, possimus praesentium quasi reiciendis tenetur voluptatibus? Facilis, maiores!
+                </p>
+            </div>
+        </div>
+    </section>
 </section>
 </body>
 </html>
