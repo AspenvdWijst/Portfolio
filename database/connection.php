@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
 $username = "root";
-//$password = "!cc8Z1w8iLAs66ipH";
-$password = "root";
+$password = "!cc8Z1w8iLAs66ipH";
+//$password = "root";
 $dbname = "portfolio";
 $conn = "null";
 

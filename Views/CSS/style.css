@@ -241,6 +241,8 @@ form input, textarea{
 .downloadscontainer{
     height: 91dvh;
     width: 100dvw;
+    display: flex;
+    justify-content: center;
 }
 
 .developmentcontainer,
