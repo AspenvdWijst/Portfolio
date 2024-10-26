@@ -9,11 +9,11 @@
 <h1 class="pagetitle">Downloads</h1>
 <section class="downloadscontainer">
     <a href="../layout/downloads/resume_Aspen.pdf" download="resume_Aspen.pdf" class="resume">
-        <img src="/layout/Images/resume_prev.png">
+        <img src="/layout/Images/resume_prev.png" alt="resume_prev">
         <h3>Download my resume(EN)</h3>
     </a>
     <a href="../layout/downloads/CV_Aspen.pdf" download="CV_Aspen.pdf" class="cv">
-        <img src="/layout/Images/CV_prev.png">
+        <img src="/layout/Images/CV_prev.png" alt="cv_prev">
         <h3>Download mijn CV(NL)</h3>
     </a>
 </section>

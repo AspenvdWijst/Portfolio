@@ -45,7 +45,7 @@ nav {
     align-items: center;
     text-decoration: none;
     color: black;
-    font-size: 200%;
+    font-size: 2dvw;
     grid-column: 1;
     border: none;
     transition: font-size 0.75s ease;
@@ -53,20 +53,15 @@ nav {
 
 
 .HomeButton:hover{
-    font-size: 210%
+    font-size: 2.25dvw
 }
 
 /*creates an effect when you hover over a button*/
 .AboutMe:hover, .MyProjects:hover, .Downloads:hover, .Contact:hover{
-    font-size: 160%;
+    font-size: 1.5dvw;
 }
 .dropdownContent a:hover{
-    font-size: 135%;
-}
-
-/*creates an effect when you click on a button*/
-.HomeButton:active, .AboutMe:active, .MyProjects:active, .dropdownContent a:active, .Downloads:active, .Contact:active{
-    background: rgba(5 , 5, 5, 0);
+    font-size: 1.25dvw;
 }
 
 .AboutMe {
@@ -78,7 +73,7 @@ nav {
     grid-column: 3;
     border: none;
     transition: font-size 0.75s ease;
-    font-size: 150%;
+    font-size: 1.25dvw;
 }
 
 /*makes sure the dropdown menu is in the right place*/
@@ -92,7 +87,7 @@ nav {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-size: 150%;
+    font-size: 1.25dvw;
     color: black;
     grid-column: 4;
     width: 100%;
@@ -110,7 +105,7 @@ nav {
 
 .dropdownContent a {
     line-height: 2vh;
-    font-size: 125%;
+    font-size: 1.1dvw;
     color: black;
     text-decoration: none;
     display: block;
@@ -131,7 +126,7 @@ nav {
     align-items: center;
     text-decoration: none;
     color: black;
-    font-size: 150%;
+    font-size: 1.25dvw;
     grid-column: 5;
     border: none;
     transition: font-size 0.75s ease;
@@ -143,14 +138,14 @@ nav {
     align-items: center;
     text-decoration: none;
     color: black;
-    font-size: 150%;
+    font-size: 1.25dvw;
     grid-column: 6;
     border: none;
     transition: font-size 0.75s ease;
 }
 
 label {
-    font-size: 110%;
+    font-size: 1.1dvw;
 }
 
 .indexcontainer{
@@ -163,26 +158,27 @@ label {
 }
 
 .starttext{
-    font-size: 6dvh;
+    font-size: 3dvw;
 }
 
 .homeimages img{
-    height: 5dvh;
-    padding: 1dvh;
+    height: 2.5dvw;
+    padding: 0.5dvw;
 }
 
 footer{
+    position: fixed;
     display: flex;
-    align-items: end;
+    margin-top: 0;
     font-weight: bold;
-    font-size: 1.5vh;
-    height: 2vh;
+    font-size: 1dvw;
+    height: 2dvh;
     width: 100dvw;
     background: rgba(56, 56, 56, 0);
 }
 
 .contactcontainer{
-    height: 84dvh;
+    height: 81dvh;
     width: 100dvw;
     display: flex;
     align-items: center;
@@ -194,20 +190,20 @@ footer{
 .pagetitle{
     display: flex;
     justify-content: center;
-    font-size: 6dvh;
+    font-size: 4dvw;
 }
 
 form input, textarea{
-    margin: 1dvh;
-    border-radius: 0.35dvh;
+    margin: 0.5dvw;
+    border-radius: 0.1dvw;
     background: rgba(100, 100, 0, 0.23);
     border: 1px solid rgba(56, 56, 56);
     width: 25dvw;
 }
 
 .contactcontainer img{
-    height: 5dvh;
-    padding: 1dvh;
+    height: 3dvw;
+    padding: 0.5dvw;
 }
 
 .submit{
@@ -215,7 +211,7 @@ form input, textarea{
     border: 1px solid rgba(56, 56, 56);
     height: 4dvh;
     width: 4dvw;
-    font-size: 2dvh;
+    font-size: 1dvw;
 }
 
 .submit:hover{
@@ -240,10 +236,17 @@ form input, textarea{
 .aboutcontainer{
     height: 91dvh;
     width: 100dvw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutcontainer pre{
+    font-size: 1.5dvw;
 }
 
 .downloadscontainer{
-    height: 84dvh;
+    height: 81dvh;
     width: 100dvw;
     display: flex;
     justify-content: center;
@@ -257,31 +260,36 @@ form input, textarea{
     margin: 2dvh;
     align-items: center;
     color: black;
-    transition: all 0.6s ease;
 }
 
 .cv img,
 .resume img{
-    max-height: 40dvh;
+    max-width: 15dvw;
     box-shadow: 1px 1px 3px;
     margin: 1dvh;
     transition: all 0.6s ease;
 }
 
-.cv:hover,
-.resume:hover{
-    font-size: 2dvh;
+.cv h3,
+.resume h3{
+    transition: all 0.6s ease;
+}
+
+.cv:hover h3,
+.resume:hover h3{
+    font-size: 1.2dvw;
 }
 
 .cv:hover img,
 .resume:hover img{
-    max-height: 45dvh;
+    max-width: 18vw;
 }
+
 
 
 .developmentcontainer,
 .mediacontainer{
-    font-size: 5dvh;
+    font-size: 2.5dvw;
     margin-left: 1dvw;
     padding: 2dvh 0 2dvh 0;
 }
@@ -290,12 +298,17 @@ form input, textarea{
 #mediaproj{
     padding: 2dvh 0 2dvh 0;
     font-style: italic;
+    font-size: 1.5dvw;
 }
 
 h2{
-    font-size: 3dvh;
+    font-size: 1dvw;
     font-weight: lighter;
     font-style: italic;
+}
+
+h3{
+    font-size: 1dvw;
 }
 
 hr{
@@ -308,7 +321,7 @@ hr{
 /*followed this tutorial for the base of the code but edited it to my liking:*/
 /*https://www.youtube.com/watch?v=RvpYnUZRquw*/
 
-input{
+.projectscontainer input{
     display: none;
 }
 
@@ -324,7 +337,7 @@ h1 img{
 
 .portfoliodrop,
 .charitydrop{
-    height: 4dvh;
+    height: 3dvh;
     display: inline-block;
     rotate: 90deg;
     transition: 0.5s ease;
@@ -340,7 +353,7 @@ h1 img{
 
 .portfoliop label:hover,
 .charityp label:hover{
-    font-size: 130%;
+    font-size: 2dvw;
     transition: 0.5s ease;
 }
 
@@ -380,8 +393,4 @@ h1 img{
 .portfoliocollapsed h6,
 .charitycollapsed{
     margin-bottom: 1dvh;
-}
-
-footer{
-    margin-top: auto;
 }
