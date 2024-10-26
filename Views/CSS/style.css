@@ -32,7 +32,7 @@ a{
 nav {
     font-weight: bold;
     background: rgba(56, 56, 56, 0);
-    display: grid   ;
+    display: grid;
     grid-template-columns: 2fr 6fr repeat(4, 1fr);
     grid-template-rows: 7vh;
     height: 7vh;
@@ -168,9 +168,10 @@ label {
 }
 
 footer{
-    position: relative;
+    position: fixed;
+    bottom: 0;
     display: flex;
-    margin-top: 0;
+    margin-top: auto;
     font-weight: bold;
     font-size: 1dvw;
     height: 2dvh;
@@ -291,8 +292,6 @@ form input, textarea{
     max-width: 18vw;
 }
 
-
-
 .developmentcontainer,
 .mediacontainer{
     font-size: 2.5dvw;
@@ -301,7 +300,8 @@ form input, textarea{
 }
 
 #softwaredevelop,
-#mediaproj{
+#mediaproj,
+#strife{
     padding: 2dvh 0 2dvh 0;
     font-style: italic;
     font-size: 1.5dvw;
@@ -332,7 +332,8 @@ hr{
 }
 
 .portfoliop h1,
-.charityp h1{
+.charityp h1,
+.strifep h1{
     display: flex;
     align-items: center;
 }
@@ -342,7 +343,8 @@ h1 img{
 }
 
 .portfoliodrop,
-.charitydrop{
+.charitydrop,
+.strifedrop{
     height: 3dvh;
     display: inline-block;
     rotate: 90deg;
@@ -350,7 +352,8 @@ h1 img{
 }
 
 .portfoliop label,
-.charityp label{
+.charityp label,
+.strifep label{
     position: relative;
     display: block;
     cursor: pointer;
@@ -358,31 +361,35 @@ h1 img{
 }
 
 .portfoliop label:hover,
-.charityp label:hover{
+.charityp label:hover,
+.strifep label:hover{
     font-size: 2dvw;
     transition: 0.5s ease;
 }
 
 .portfoliop label:hover img,
-.charityp label:hover img{
+.charityp label:hover img,
+.strifep label:hover img{
     transform: scale(115%);
 }
 
 .portfoliop label:after,
-.charityp label:after{
+.charityp label:after,
+.strifep label:after{
     content: "";
     position: absolute;
 }
 
 .portfoliop input:checked + label h1 .portfoliodrop,
-.charityp input:checked + label h1 .charitydrop{
+.charityp input:checked + label h1 .charitydrop,
+.strifep input:checked + label h1 .strifedrop{
     transform: rotate(90deg);
 }
 
 .portfoliocollapsed,
-.charitycollapsed{
+.charitycollapsed,
+.strifecollapsed{
     max-height: 0;
-    overflow-wrap: anywhere;
     position: relative;
     top: -100%;
     transition: all 0.6s ease;
@@ -390,13 +397,15 @@ h1 img{
 }
 
 .portfoliop input:checked ~ .portfoliocollapsed,
-.charityp input:checked ~ .charitycollapsed{
+.charityp input:checked ~ .charitycollapsed,
+.strifep input:checked ~ .strifecollapsed{
     max-height: 50dvh;
     top: 0;
     opacity: 1;
 }
 
-.portfoliocollapsed h6,
-.charitycollapsed{
-    margin-bottom: 1dvh;
+.portfoliocollapsed pre,
+.charitycollapsed pre,
+.strifecollapsed pre{
+    font-size: 1.5dvw;
 }
