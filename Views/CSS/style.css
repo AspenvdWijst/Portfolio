@@ -24,6 +24,10 @@ body{
     }
 }
 
+a{
+    text-decoration: none;
+}
+
 /*makes the nav have a base layout*/
 nav {
     font-weight: bold;
@@ -239,11 +243,41 @@ form input, textarea{
 }
 
 .downloadscontainer{
-    height: 91dvh;
+    height: 84dvh;
     width: 100dvw;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+
+.cv,
+.resume{
+    display: flex;
+    flex-direction: column;
+    margin: 2dvh;
+    align-items: center;
+    color: black;
+    transition: all 0.6s ease;
+}
+
+.cv img,
+.resume img{
+    max-height: 40dvh;
+    box-shadow: 1px 1px 3px;
+    margin: 1dvh;
+    transition: all 0.6s ease;
+}
+
+.cv:hover,
+.resume:hover{
+    font-size: 2dvh;
+}
+
+.cv:hover img,
+.resume:hover img{
+    max-height: 45dvh;
+}
+
 
 .developmentcontainer,
 .mediacontainer{

@@ -18,8 +18,8 @@
         <button type="submit" class="submit">Submit</button>
     </form>
     <span>
-        <a href="https://www.linkedin.com/in/aspen-van-der-wijst-0592a4153/" target="_blank"><img src="../Images_fonts/Images/linkedin.png" alt="linkedin"></a>
-        <a href="https://github.com/AspenvdWijst" target="_blank"><img src="../Images_fonts/Images/github.png" alt="github"></a>
+        <a href="https://www.linkedin.com/in/aspen-van-der-wijst-0592a4153/" target="_blank"><img src="../layout/Images/linkedin.png" alt="linkedin"></a>
+        <a href="https://github.com/AspenvdWijst" target="_blank"><img src="../layout/Images/github.png" alt="github"></a>
     </span>
 </section>
 </body>

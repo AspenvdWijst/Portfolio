@@ -13,7 +13,7 @@
             <div class="portfoliop">
                 <input type="checkbox" id="portfoliocollapse">
                 <label for="portfoliocollapse">
-                    <h1>1 | Portfolio webpage<img src="../Images_fonts/Images/arrow.png" alt="arrow" class="portfoliodrop"></h1>
+                    <h1>1 | Portfolio webpage<img src="../layout/Images/arrow.png" alt="arrow" class="portfoliodrop"></h1>
                     <hr>
                     <h2>2024</h2>
                 </label>
@@ -30,7 +30,7 @@
         <div class="charityp">
             <input type="checkbox" id="collapse">
             <label for="collapse">
-                <h1>1 | Portfolio webpage<img src="../Images_fonts/Images/arrow.png" alt="arrow" class="charitydrop"></h1>
+                <h1>1 | Portfolio webpage<img src="../layout/Images/arrow.png" alt="arrow" class="charitydrop"></h1>
                 <hr>
                 <h2>2024</h2>
             </label>
