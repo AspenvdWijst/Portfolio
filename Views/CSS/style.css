@@ -37,6 +37,7 @@ nav {
     grid-template-rows: 7vh;
     height: 7vh;
     z-index: 999;
+    max-width: 100dvw;
 }
 
 .HomeButton {
@@ -167,13 +168,13 @@ label {
 }
 
 footer{
-    position: fixed;
+    position: relative;
     display: flex;
     margin-top: 0;
     font-weight: bold;
     font-size: 1dvw;
     height: 2dvh;
-    width: 100dvw;
+    max-width: 100dvw;
     background: rgba(56, 56, 56, 0);
 }
 
@@ -234,8 +235,9 @@ form input, textarea{
 }
 
 .aboutcontainer{
+    margin-top: 7dvh;
     height: 91dvh;
-    width: 100dvw;
+    max-width: 100dvw;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -243,6 +245,10 @@ form input, textarea{
 
 .aboutcontainer pre{
     font-size: 1.5dvw;
+}
+
+.aboutcontainer a{
+    color: slategray;
 }
 
 .downloadscontainer{
