@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Aspen's portfolio webpage">
+    <meta name="keywords" content="HTML, CSS, javascript, PHP, portfolio, Aspen">
+    <meta name="author" content="Aspen van der Wijst">
     <link rel="stylesheet" href="/Views/CSS/style.css">
+    <link rel="icon" type="image/x-icon" href="../../layout/Images/favicon.ico">
 </head>
 <body>
 <nav>

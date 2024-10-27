@@ -26,6 +26,28 @@ body{
 
 a{
     text-decoration: none;
+    color: slategray;
+}
+
+h1 img{
+    margin-left: auto;
+}
+
+h2{
+    font-size: 1dvw;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+h3{
+    font-size: 1dvw;
+}
+
+hr{
+    border: none;
+    height: 0.01dvh;
+    background-color: black;
+    margin: 1dvh;
 }
 
 /*makes the nav have a base layout*/
@@ -235,93 +257,12 @@ form input, textarea{
     margin: 0 1dvw 0 1dvw;
 }
 
-.aboutcontainer{
-    margin-top: 7dvh;
-    height: 91dvh;
-    max-width: 100dvw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.aboutcontainer pre{
-    font-size: 1.5dvw;
-}
-
-.aboutcontainer a{
-    color: slategray;
-}
-
-.downloadscontainer{
-    height: 81dvh;
-    width: 100dvw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cv,
-.resume{
-    display: flex;
-    flex-direction: column;
-    margin: 2dvh;
-    align-items: center;
-    color: black;
-}
-
-.cv img,
-.resume img{
-    max-width: 15dvw;
-    box-shadow: 1px 1px 3px;
-    margin: 1dvh;
-    transition: all 0.6s ease;
-}
-
-.cv h3,
-.resume h3{
-    transition: all 0.6s ease;
-}
-
-.cv:hover h3,
-.resume:hover h3{
-    font-size: 1.2dvw;
-}
-
-.cv:hover img,
-.resume:hover img{
-    max-width: 18vw;
-}
-
-.developmentcontainer,
-.mediacontainer{
-    font-size: 2.5dvw;
-    margin-left: 1dvw;
-    padding: 2dvh 0 2dvh 0;
-}
-
 #softwaredevelop,
 #mediaproj,
 #strife{
     padding: 2dvh 0 2dvh 0;
     font-style: italic;
     font-size: 1.5dvw;
-}
-
-h2{
-    font-size: 1dvw;
-    font-weight: lighter;
-    font-style: italic;
-}
-
-h3{
-    font-size: 1dvw;
-}
-
-hr{
-    border: none;
-    height: 0.01dvh;
-    background-color: black;
-    margin: 1dvh;
 }
 
 /*followed this tutorial for the base of the code but edited it to my liking:*/
@@ -336,10 +277,6 @@ hr{
 .strifep h1{
     display: flex;
     align-items: center;
-}
-
-h1 img{
-    margin-left: auto;
 }
 
 .portfoliodrop,
@@ -408,4 +345,169 @@ h1 img{
 .charitycollapsed pre,
 .strifecollapsed pre{
     font-size: 1.5dvw;
+}
+
+.aboutcontainer{
+    margin-top: 7dvh;
+    height: 91dvh;
+    max-width: 100dvw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutcontainer pre{
+    font-size: 1.5dvw;
+}
+
+.downloadscontainer{
+    height: 81dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv,
+.resume{
+    display: flex;
+    flex-direction: column;
+    margin: 2dvh;
+    align-items: center;
+    color: black;
+}
+
+.cv img,
+.resume img{
+    max-width: 15dvw;
+    box-shadow: 1px 1px 3px;
+    margin: 1dvh;
+    transition: all 0.6s ease;
+}
+
+.cv h3,
+.resume h3{
+    transition: all 0.6s ease;
+}
+
+.cv:hover h3,
+.resume:hover h3{
+    font-size: 1.2dvw;
+}
+
+.cv:hover img,
+.resume:hover img{
+    max-width: 18vw;
+}
+
+.developmentcontainer,
+.mediacontainer{
+    font-size: 2.5dvw;
+    margin-left: 1dvw;
+    padding: 2dvh 0 2dvh 0;
+}
+
+
+
+
+
+
+
+@media (min-width: 400px) and (max-width: 450px){
+    nav {
+        display: grid;
+        grid-template-columns: 2fr 2fr repeat(4, 1fr);
+        grid-template-rows: 7vh;
+        height: 7vh;
+        max-width: 100dvw;
+    }
+
+    .HomeButton {
+        font-size: 2dvh;
+    }
+
+    .AboutMe,
+    .MyProjects,
+    .Downloads,
+    .Contact{
+        display: flex;
+        align-items: center;
+        font-size: 1.25dvh;
+    }
+
+    footer{
+        font-size: 1dvh;
+        height: 2dvh;
+    }
+
+    .pagetitle{
+        font-size: 2dvh;
+    }
+
+    label {
+        font-size: 2dvh;
+    }
+
+    .starttext{
+        font-size: 2.8dvh;
+    }
+
+    .homeimages img{
+        height: 2.5dvh;
+        padding: 0.8dvh;
+    }
+
+    .aboutcontainer{
+        margin-top: 0;
+    }
+
+    .aboutcontainer pre{
+        font-size: 1.5dvh;
+        white-space: pre-line;
+    }
+
+    h2,
+    h3{
+        font-size: 1.5dvh;
+    }
+
+    #softwaredevelop,
+    #mediaproj,
+    #strife{
+        font-size: 1.5dvh;
+    }
+
+    .portfoliop label:hover,
+    .charityp label:hover,
+    .strifep label:hover{
+        font-size: 2.2dvh;
+    }
+
+    .portfoliocollapsed pre,
+    .charitycollapsed pre,
+    .strifecollapsed pre{
+        font-size: 1.5dvh;
+        white-space: pre-line;
+    }
+
+    .cv img,
+    .resume img{
+        max-width: 15dvh;
+    }
+
+    form input, textarea{
+        width: 30dvh;
+    }
+
+    .contactcontainer img{
+        height: 3dvh;
+    }
+
+    .submit{
+        background: rgba(56, 56, 56, 0);
+        border: 1px solid rgba(56, 56, 56);
+        height: 2.5dvh;
+        width: 15dvw;
+        font-size: 1.5dvh;
+    }
 }
