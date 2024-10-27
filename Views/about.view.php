@@ -10,6 +10,7 @@
 <section class="aboutcontainer">
     <h1 class="pagetitle">About Me</h1>
     <pre>
+        <strong>Me and media</strong>
         I was born on the 27th of March in 2004. For a long time, I had the idea that I'd become a radio presenter.
         I was actively working to improve my presenting skill and my knowledge of all kinds of music. However, that dream faded after I had tried
         everything I could. I kept hearing "no" from everything that I tried.
@@ -22,6 +23,7 @@
         and reviews on a higher level. My love for music is never something that I will lose,
         and I draw a lot of inspiration from the music that I'm listening to at the time.
 
+        <strong>Me and software development</strong>
         After this I was wondering what to do next. I thought long and hard about my past passions,
         and I remembered that I have always done a lot with software.
         Ever since I got my first phone, I've been working on modifying devices. I rooted my first phone and I put homebrew on my old Nintendo 3DS.

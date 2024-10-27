@@ -260,7 +260,7 @@ form input, textarea{
 #softwaredevelop,
 #mediaproj,
 #strife{
-    padding: 2dvh 0 2dvh 0;
+    padding: 2dvh 0 0 0;
     font-style: italic;
     font-size: 1.5dvw;
 }
@@ -291,6 +291,7 @@ form input, textarea{
 .portfoliop label,
 .charityp label,
 .strifep label{
+    margin-top: 1dvh;
     position: relative;
     display: block;
     cursor: pointer;
@@ -357,6 +358,7 @@ form input, textarea{
 }
 
 .aboutcontainer pre{
+    margin-top: 2dvw;
     font-size: 1.5dvw;
 }
 
